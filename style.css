@@ -1,0 +1,46 @@
+*
+{
+    box-sizing: border-box;
+
+}
+body
+{
+    background: yellow;
+}
+.walk
+{
+    background:url('PANDA.webp');
+    width:250px;
+    height:354px;
+    color:black;
+
+    animation: panda 1s steps(12) infinite ,
+               forward 5s linear infinite;
+}
+@keyframes panda
+{
+    0%
+    {
+        background-position:0px;
+    }
+    100%
+    {
+        background-position:3000px;
+    }
+}
+@keyframes forward
+{
+    0%
+    {
+        transform:translateX(-100px);
+    }
+    100%
+    {
+        transform:translateX(1200px);
+    }
+}
+
+.road
+{
+    border-bottom: 8px dashed rgb(16, 16, 16);;
+}
